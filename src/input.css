@@ -334,7 +334,7 @@ footer .social-icons img {
         font-size: 0.75rem; /* 12px */
     }
     .pack-card .price-info span {
-        font-size: 1.25rem; /* 20px = text-xl */
+        font-size: 1rem; /* 20px = text-xl */
     }
     .pack-card .price-info span.price {
         font-size: 1.5rem; /* 24px = text-2xl */
@@ -485,10 +485,11 @@ footer .social-icons img {
     footer .container {
         grid-template-columns: 1fr;
         text-align: center;
+  
     }
     footer h3,
     footer ul li a {
-        font-size: 1.25rem; /* 20px = text-xl */
+        font-size: 0.7rem; /* 20px = text-xl */
     }
     footer .social-icons {
         justify-content: center;

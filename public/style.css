@@ -1139,7 +1139,7 @@ footer .social-icons img {
   }
 
   .pack-card .price-info span {
-    font-size: 1.25rem;
+    font-size: 1rem;
     /* 20px = text-xl */
   }
 
@@ -1355,7 +1355,7 @@ footer .social-icons img {
 
   footer h3,
     footer ul li a {
-    font-size: 1.25rem;
+    font-size: 0.7rem;
     /* 20px = text-xl */
   }
 
