@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Destinations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100">
+    <header class="bg-blue-300 p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="../public/logo.png" alt="Logo" class="rounded-full shadow-lg border-4 border-[#00CBE0] h-10 mr-2">
+            <h1 class="text-xl font-bold">Travel</h1>
+        </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white font-semibold">Accueil</a></li>
+                <li><a href="#" class="text-white font-semibold">Planification</a></li>
+                <li><a href="#" class="text-black font-semibold">Préférences usagers</a></li>
+            </ul>
+        </nav>
+        <div class="flex space-x-4">
+            <button><img src="../public/icone2.png" alt="Icône 2" class="rounded-full shadow-lg border-4 border-[#00CBE0] h-6"></button>
+
+            <button><img src="../public/icone1.png" alt="Icône 1" class="rounded-full shadow-lg border-4 border-[#00CBE0] h-6"></button>
+        </div>
+    </header>
+    
+    <main class="max-w-6xl mx-auto mt-6 p-4">
+        <h2 class="text-center text-2xl font-bold text-blue-700">Top Destination</h2>
+        <div class="flex justify-center mt-4">
+            <input type="text" placeholder="Destination" class="p-2 border rounded-l-md">
+            <input type="date" class="p-2 border">
+            <input type="number" placeholder="Budget" class="p-2 border">
+            <button class="bg-blue-500 text-white p-2 rounded-r-md">Search</button>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-4 mt-6">
+            <script>
+                const destinations = [
+                    { image: "../public/athens.jpg", name: "Athens, Greece", stars: 5, link: "#" },
+                    { image: "../public/venice.jpg", name: "Grand Canal, Venice", stars: 4, link: "#" },
+                    { image: "../public/kerala.jpg", name: "Wayanad, Kerala", stars: 5, link: "#" },
+                    { image: "../public/railay.jpg", name: "Railay Beach, Thailand", stars: 5, link: "#" },
+                    { image: "../public/bali.jpg", name: "Bali, Indonesia", stars: 4, link: "#" },
+                    { image: "../public/laketaupo.jpg", name: "Lake Taupo, New Zealand", stars: 5, link: "#" },
+                    { image: "../public/ladakh.jpg", name: "Ladakh, India", stars: 4, link: "#" },
+                    { image: "../public/amsterdam.jpg", name: "Amsterdam, Netherlands", stars: 5, link: "#" },
+                    { image: "../public/fujijapan.jpg", name: "Mount Fuji, Japan", stars: 5, link: "#" }
+                ];
+                
+                document.write(destinations.map(dest => `
+                    <div class='bg-white shadow-md p-2 rounded-md'>
+                        <img src='${dest.image}' alt='${dest.name}' class='rounded-full shadow-lg border-4 border-[#00CBE0] w-full h-40 object-cover'>
+                        <h3 class='text-center font-semibold mt-2'>${dest.name}</h3>
+                        <div class='flex justify-between items-center mt-1 px-4'>
+                            <span class='text-blue-500 text-lg'>${"★".repeat(dest.stars).padEnd(5, "☆")}</span>
+                            <a href='${dest.link}' class='text-gray-700 font-semibold text-sm bg-blue-200 px-3 py-1 rounded'>Voir plus</a>
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+    </main>
+    
+    
+    <footer class="bg-blue-300 p-6 mt-10 text-center text-white">
+        <div class="grid grid-cols-3 gap-4 text-sm">
+            <div>
+                <h4 class="font-semibold">Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold">Features</h4>
+                <ul>
+                    <li><a href="#">Popular Destinations</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                    <li><a href="#">Tips & Budget</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold">Follow Us</h4>
+                <div class="flex justify-center space-x-4">
+                    <a href="#"><img src="../public/facebook.png" alt="Facebook" class="h-6"></a>
+                    <a href="#"><img src="../public/twitter.png" alt="Twitter" class="h-6"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
