@@ -442,7 +442,7 @@ footer .social-icons img {
     }
     footer h3,
     footer ul li a {
-        font-size: 1.25rem; /* 20px = text-xl */
+        font-size: 0.7rem; /* 20px = text-xl */
     }
     footer .social-icons {
         justify-content: center;
