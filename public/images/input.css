@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Couleurs personnalisées */
+@layer base {
+  :root {
+    --color-primary: #00A0B1;
+    --color-secondary: #00a0c1;
+  }
+}
+
+/* Styles globaux */
+@layer components {
+  .bg-primary {
+    @apply bg-[var(--color-primary)];
+  }
+  .bg-secondary {
+    @apply bg-[var(--color-secondary)];
+  }
+  .text-primary {
+    @apply text-[var(--color-primary)];
+  }
+}
+
+/* Header */
+@layer components {
+  .header {
+    @apply bg-secondary p-4 flex justify-between items-center;
+  }
+  .nav-link {
+    @apply font-bold px-6 transition duration-300;
+  }
+  .nav-link.active {
+    @apply text-white;
+  }
+  .nav-link.inactive {
+    @apply text-black hover:text-gray-700;
+  }
+}
+
+/* Formulaire de recherche */
+@layer components {
+  .search-container {
+    @apply bg-secondary p-4 flex items-center gap-4 rounded-lg shadow-lg;
+  }
+  .search-input {
+    @apply border rounded-md p-2 w-1/3;
+  }
+  .search-button {
+    @apply bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md;
+  }
+}
+
+/* Cartes des destinations */
+@layer components {
+  .destination-card {
+    @apply bg-white shadow-lg rounded-lg overflow-hidden border p-4;
+  }
+  .destination-card img {
+    @apply w-full h-48 object-cover;
+  }
+  .destination-card-title {
+    @apply text-lg font-bold;
+  }
+  .destination-card-price {
+    @apply text-lg font-bold text-gray-900;
+  }
+  .destination-card-button {
+    @apply bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+}
+
+/* Section Nos Offres */
+@layer components {
+  .offer-card {
+    @apply bg-white shadow-lg rounded-lg overflow-hidden;
+  }
+  .offer-card img {
+    @apply w-full h-48 object-cover;
+  }
+  .offer-card-title {
+    @apply text-lg font-bold text-gray-900;
+  }
+  .offer-card-button {
+    @apply bg-primary text-white font-bold py-2 px-4 rounded mt-4;
+  }
+}
+
+/* Footer */
+@layer components {
+  .footer {
+    @apply bg-primary text-white p-4 text-center;
+  }
+}

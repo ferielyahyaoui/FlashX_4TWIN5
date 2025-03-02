@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Rejoignez FlashX pour organiser vos voyages en toute simplicité.">
+    <title>FlashX</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/services.css">
+</head>
+<body class="bg-white text-black">
+    <!-- Barre de navigation -->
+    <header class="w-full">
+        <img class="logo" src="../public/images/logo.png" alt="Logo">
+        <nav id="nav-menu">
+            <a href="#" class="text-[#ffefef] ">Accueil</a>
+            <a href="#" class="text-black ">Planification</a>
+            <a href="#" class="text-black ">Préférences usagers</a>
+        </nav>
+        <div class="header-icons">
+            <img src="../public/images/icon2.png" alt="Icône 1">
+            <img src="../public/images/icon1.png" alt="Icône 2">
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Section de réservation -->
+    <main class="flex flex-col items-center">
+        <h1 class="text-[#00a0b1] text-2xl font-bold">Réserver en quelques étapes</h1>
+        
+        <div class="flex justify-between items-center mt-10 w-[80%]">
+            <div class="space-y-8">
+                <div class="flex items-center">
+                    <img src="../public/images/location.png" alt="Location Icon" class="w-[50px] h-[50px] mr-4">
+                    <div>
+                        <h2 class="text-black text-2xl font-bold">Choisir destination</h2>
+                        <p class="text-[#a1a1a1] text-base">Trouvez la destination idéale pour votre voyage.</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img src="../public/images/money.png" alt="Location Icon" class="w-[50px] h-[50px] mr-4">
+                    <div>
+                        <h2 class="text-black text-2xl font-bold">Payer votre voyage</h2>
+                        <p class="text-[#a1a1a1] text-base">Sécurisez votre réservation avec un paiement rapide.</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img src="../public/images/world.png" alt="Location Icon" class="w-[70px] h-[70px] mr-4">
+                    <div>
+                        <h2 class="text-black text-2xl font-bold">Débuter l'expérience</h2>
+                        <p class="text-[#a1a1a1] text-base">Partez à l’aventure et profitez pleinement de votre séjour.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="../public/images/1.0.png" alt="Experience Image" class="w-[200px] h-auto">
+        </div>
+
+        <!-- Bouton Réserver centré -->
+        <div class="reserve-button">
+            <button class="bg-[#00a0b1] text-white font-bold py-3 px-6 text-lg rounded-[18px] border-4 border-white">
+                Voir Plus
+            </button>
+        </div>
+
+        <!-- Section Services centrée -->
+        <div class="services-section">
+            <h2>Nos services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="../public/images/service1.png" alt="Service 1">
+                    <h3>Planification de voyages</h3>
+                    <p>Planifier à tout moment votre voyage</p>
+                </div>
+                <div class="service-card">
+                    <img src="../public/images/service2.png" alt="Service 2">
+                    <h3>Créer des souvenirs</h3>
+                    <p>Partagez vos souvenirs de voyage avec notre communauté.</p>
+                </div>
+                <div class="service-card">
+                    <img src="../public/images/service3.png" alt="Service 3">
+                    <h3>Préférence usagers</h3>
+                    <p>Service personnalisé selon vos préférences et budget.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Section Newsletter --> 
+        <div class="newsletter-section"> <br>
+            <h2>Newsletter</h2> <br>
+        </div>
+        <div class="newsletter-box">
+            <h2>S’inscrire pour plus d’informations, dernières news</h2>
+            <div class="input-container">
+                <img src="../public/images/newsletter.png" alt="Newsletter Icon">
+                <input type="email" placeholder="Your email">
+              
+            </div> <br>
+            <div class="reserve-button_1">
+                <button>
+                   S'inscrire
+               </button>
+               </div>
+        </div>
+    </main>
+
+       <!-- Pied de page -->
+       <footer>
+        <div class="container">
+            <div>
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">How to Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Features</h3>
+                <ul>
+                    <li><a href="#">Popular Destinations</a></li>
+                    <li><a href="#">Website Packages</a></li>
+                    <li><a href="#">List of Tours</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <img src="../public/images/facebook.png" alt="Facebook">
+                    <img src="../public/images/instagram.png" alt="Instagram">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
