@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hébergement</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap">
+  
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="font-inter text-dark-gray bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300">
+  <header class="bg-light-cyan py-4 px-6 flex items-center dark:bg-gray-800">
+  
+    <div class="flex-1 flex justify-start">
+      <img class="logo w-18 h-12" src="../public/images/logo.png" alt="Logo">
+    </div>
+
+    <nav class="flex space-x-14">
+      <a href="#" class="text-custom-cyan font-bold text-[24px] dark:text-cyan-300">ACCUEIL</a>
+      <a href="#" class="text-dark-gray font-bold text-[24px] dark:text-gray-300">PLANIFICATION</a>
+      <a href="#" class="text-dark-gray font-bold text-[24px] dark:text-gray-300">PRÉFÉRENCES USAGERS</a>
+    </nav>
+   
+    <div class="flex-1 flex justify-end items-center space-x-4">
+      <img src="../public/images/icon2.png" alt="Icon 2" class="w-18 h-12">
+      <img src="../public/images/icon1.png" alt="Icon 1" class="w-18 h-12">
+    </div>
+  </header>
+
+  <section class="py-8 dark:bg-gray-900">
+    <div class="container mx-auto">
+    
+      <div class="flex items-center mb-6 px-6">
+  
+        <div class="flex-1"></div>
+    
+        <div class="flex-1 text-center">
+          <h1 class="text-4xl font-bold text-custom-cyan dark:text-cyan-300">Hébergement</h1>
+        </div>
+
+        <div class="flex-1 flex justify-end">
+          <img id="themeToggle" src="../public/images/moon.jpg" alt="Moon" class="w-12 h-12 cursor-pointer" onclick="toggleDarkMode()">
+        </div>
+      </div>
+
+      <div class="bg-light-cyan p-4 rounded-lg flex justify-center items-center space-x-4 mb-8 dark:bg-gray-700">
+        <select class="border p-2 rounded dark:bg-gray-800 dark:text-white dark:border-gray-600">
+          <option>Ville</option>
+          <option>Paris, France</option>
+        </select>
+        <select class="border p-2 rounded dark:bg-gray-800 dark:text-white dark:border-gray-600">
+          <option>Type Hébergement</option>
+          <option>Mon, 22 Jan</option>
+        </select>
+        <input type="text" placeholder="$799" class="border p-2 rounded dark:bg-gray-800 dark:text-white dark:border-gray-600">
+        <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Rechercher</button>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
+          <img src="https://www.urlaubstracker.de/wp-content/uploads/2018/12/hotel-zimmer-aussicht.jpg" alt="Hôtels" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-bold dark:text-white">Hôtels</h3>
+            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
+          <img src="https://th.bing.com/th/id/R.54c7111bd7ac819b5c45dea828d7f9db?rik=EGo%2bIbpzMZDbLA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-zMVQI8PLOhg%2fVWeZURRgoqI%2fAAAAAAAAH2w%2fKRHH7OL1UHw%2fs1600%2f03.jpg&ehk=8SbmFKzIvaQ6brpml9HkwSLbgiwc6SJ7jyqb4%2fPmIJg%3d&risl=&pid=ImgRaw&r=0" alt="Appartements" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-bold dark:text-white">Appartements</h3>
+            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
+          <img src="https://lesyeuxcarres.com/wp-content/uploads/2018/03/les-yeux-carres-infographie-3d-toulouse-dl2a-faycal-sentissi-complexe-hotelier-casablanca-atlas-hospitality-perspective-crepuscule.jpg" alt="Complexes hôteliers" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-bold dark:text-white">Complexes hôteliers</h3>
+            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
+          <img src="https://propiedadescom.s3.amazonaws.com/files/600x400/circuito-puerta-del-sol-4-9-puerta-real-corregidora-queretaro-28465565-foto-01.jpg" alt="Villas" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-bold dark:text-white">Villas</h3>
+            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-8 dark:bg-gray-900">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold text-custom-cyan mb-6 dark:text-cyan-300">Activités</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
+          <img src="../public/images/nautiques.png" alt="Activités nautiques" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-bold dark:text-white">Activités nautiques</h3>
+            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
+          <img src="../public/images/hiver.png" alt="Activités hiver" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-bold dark:text-white">Activités hiver</h3>
+            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
+          <img src="../public/images/forest.png" alt="Activités forêt" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-bold dark:text-white">Activités forêt</h3>
+            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-custom-cyan text-white py-8 dark:bg-dark-custom-cyan">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-black dark:text-white">QUICK LINKS</h3>
+        <ul>
+          <li><a href="#" class="text-white hover:underline">Home</a></li>
+          <li><a href="#" class="text-white hover:underline">Explore</a></li>
+          <li><a href="#" class="text-white hover:underline">Write to Us</a></li>
+          <li><a href="#" class="text-white hover:underline">Contact Us</a></li>
+          <li><a href="#" class="text-white hover:underline">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-black dark:text-white">FEATURES</h3>
+        <ul>
+          <li><a href="#" class="text-white hover:underline">Popular Destination</a></li>
+          <li><a href="#" class="text-white hover:underline">Vacation Packages</a></li>
+          <li><a href="#" class="text-white hover:underline">List of Tours</a></li>
+          <li><a href="#" class="text-white hover:underline">Gallery</a></li>
+          <li><a href="#" class="text-white hover:underline">Travel on a Budget</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-black dark:text-white">FOLLOW US</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="text-black">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-black">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.982-6.98.058-1.281.072-1.689.072-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.981-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-black">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v .061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const body = document.body;
+      const themeToggle = document.getElementById('themeToggle');
+      if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark');
+        themeToggle.src = '../public/images/sun.jpg';
+        themeToggle.alt = 'Sun';
+      } else {
+        body.classList.remove('dark');
+        themeToggle.src = '../public/images/moon.jpg';
+        themeToggle.alt = 'Moon';
+      }
+    });
+
+    function toggleDarkMode() {
+      const body = document.body;
+      const themeToggle = document.getElementById('themeToggle');
+      body.classList.toggle('dark');
+      if (body.classList.contains('dark')) {
+        themeToggle.src = '../public/images/sun.jpg';
+        themeToggle.alt = 'Sun';
+        localStorage.setItem('theme', 'dark'); 
+      } else {
+        themeToggle.src = '../public/images/moon.jpg';
+        themeToggle.alt = 'Moon';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+  </script>
+</body>
+</html>
