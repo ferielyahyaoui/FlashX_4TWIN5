@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Rejoignez BizBooster pour mettre en avant vos produits et booster votre activité.">
+    <title>FlashX</title>
+    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="../src/input.css">
+   
+</head>
+<body class="bg-white text-black">
+    <!-- Barre de navigation -->
+    <!-- Barre de navigation -->
+<header class="w-full bg-[#00a0b166] h-[120px] flex items-center px-5 relative">
+    <img class="w-[100px] h-[70px]" src="../public/images/logo.png" alt="Logo">
+    <nav id="nav-menu" class="flex-1 flex justify-center gap-10">
+        <a href="HomePage.html" class="text-[#ffefef] text-lg font-bold">Accueil</a>
+        <a href="Sante.html" class="text-black text-lg font-bold">Planification</a>
+        <a href="Topdestination.html" class="text-black text-lg font-bold">Préférences usagers</a>
+        <a href="index.html" class="text-black text-lg font-bold">Hébergement</a>
+
+    </nav>
+    <div class="header-icons flex gap-6">
+        <img src="../public/images/icon2.png" alt="Icône 1"class="w-[103px] h-[79px]">
+        <img src="../public/images/icon1.png" alt="Icône 2"class="w-[103px] h-[79px]">
+    </div>
+    <div class="hamburger cursor-pointer hidden" onclick="toggleMenu()">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </div>
+</header>
+
+    <!-- Section de recherche --> <br> <br> <br> <br> <br> <br>
+    <main class="flex flex-col items-center bg-white py-8">
+        <div class="pack-title w-[502px] h-[47px] text-[#00a0b1] text-2xl font-bold font-inter text-center mx-auto">
+            Pack de voyage exclusif
+        </div>
+        
+        <div class="pack-grid container grid grid-cols-4 gap-4 w-full">
+            <div class="pack-card bg-white rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                <img class="w-full h-72 object-cover rounded-t-lg" src="../public/images/greece.webp" alt="Athens, Greece">
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold">Athens, Greece</h3>
+                    <div class="rating text-4xl text-[#00a0b1]">★★★★★</div>
+                    <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <div class="price-info flex justify-between items-center mt-4">
+                        <span class="text-2xl">From</span>
+                        <span class="price text-4xl font-bold">4000DT</span>
+                        <button class="bg-[#00a0b1] text-white font-bold px-6 py-3 rounded-lg border-4 border-white">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pack-card bg-white rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                <img class="w-full h-72 object-cover rounded-t-lg" src="../public/images/rome.jpg" alt="Rome, Italy">
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold">Rome, Italy</h3>
+                    <div class="rating text-4xl text-[#00a0b1]">★★★★★</div>
+                    <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <div class="price-info flex justify-between items-center mt-4">
+                        <span class="text-2xl">From</span>
+                        <span class="price text-4xl font-bold">4000DT</span>
+                        <button class="bg-[#00a0b1] text-white font-bold px-6 py-3 rounded-lg border-4 border-white">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pack-card bg-white rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                <img class="w-full h-72 object-cover rounded-t-lg" src="../public/images/india.jpg" alt="Agra, India">
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold">Agra, India</h3>
+                    <div class="rating text-4xl text-[#00a0b1]">★★★★★</div>
+                    <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <div class="price-info flex justify-between items-center mt-4">
+                        <span class="text-2xl">From</span>
+                        <span class="price text-4xl font-bold">5500DT</span>
+                        <button class="bg-[#00a0b1] text-white font-bold px-6 py-3 rounded-lg border-4 border-white">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pack-card bg-white rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                <img class="w-full h-72 object-cover rounded-t-lg" src="../public/images/bali.jpg" alt="Bali, Indonesia">
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold">Bali, Indonesia</h3>
+                    <div class="rating text-4xl text-[#00a0b1]">★★★★★</div>
+                    <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <div class="price-info flex justify-between items-center mt-4">
+                        <span class="text-2xl">From</span>
+                        <span class="price text-4xl font-bold">7500DT</span>
+                        <button class="bg-[#00a0b1] text-white font-bold px-6 py-3 rounded-lg border-4 border-white">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="offres-title text-[#00a0b1] text-4xl font-bold font-inter text-center w-full my-8">
+            Nos Offres
+        </div>
+        
+        <div class="offres-grid container grid grid-cols-2 gap-6 w-full mt-8">
+            <div class="offre-card flex bg-white rounded-[19.22px] shadow-lg overflow-hidden p-[19.22px] gap-[28.84px]">
+                <img class="w-[315px] h-[234px] object-cover rounded-[25.21px]" src="../public/images/plane.jpg" alt="Domestic Flights">
+                <div class="content flex flex-col justify-between p-4">
+                    <div>
+                        <div class="subtitle opacity-50 text-xl">Vols Exceptionnelles</div>
+                        <h3 class="text-[28.84px] font-medium">Economie d'argent avec FlashX</h3>
+                    </div>
+                    <button class="bg-[#00a0b1] text-white font-bold px-6 py-3 rounded-lg border-4 border-white w-fit">Réserver</button>
+                </div>
+            </div>
+            <div class="offre-card flex bg-white rounded-[19.22px] shadow-lg overflow-hidden p-[19.22px] gap-[28.84px]">
+                <img class="w-[315px] h-[234px] object-cover rounded-[25.21px]" src="../public/images/offres2.jpg" alt="Hotels Internationaux">
+                <div class="content flex flex-col justify-between p-4">
+                    <div>
+                        <div class="subtitle opacity-50 text-xl">Hotels Internationaux</div>
+                        <h3 class="text-[28.84px] font-medium">Découvrir les meilleurs hotels avec prix imbattables</h3>
+                    </div>
+                    <button class="bg-[#00a0b1] text-white font-bold px-6 py-3 rounded-lg border-4 border-white w-fit">Réserver</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied page -->
+    <footer class="bg-[#00a0c1] py-6 min-h-[288px]">
+        <div class="container grid grid-cols-3 gap-4">
+            <div>
+                <h3 class="text-sm mb-2">Quick links</h3>
+                <ul class="flex flex-col gap-1">
+                    <li><a href="#" class="text-sm text-[#C7C7C7] hover:text-white">Home</a></li>
+                    <li><a href="#" class="text-sm text-[#C7C7C7] hover:text-white">How to Us</a></li>
+                    <li><a href="#" class="text-sm text-[#C7C7C7] hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm mb-2">Features</h3>
+                <ul class="flex flex-col gap-1">
+                    <li><a href="#" class="text-sm text-[#C7C7C7] hover:text-white">Popular Destinations</a></li>
+                    <li><a href="#" class="text-sm text-[#C7C7C7] hover:text-white">Website Packages</a></li>
+                    <li><a href="#" class="text-sm text-[#C7C7C7] hover:text-white">List of Tours</a></li>
+                    <li><a href="#" class="text-sm text-[#C7C7C7] hover:text-white">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm mb-2">Follow Us</h3>
+                <div class="social-icons flex gap-4">
+                    <img class="w-10 h-10" src="../public/images/facebook.png" alt="Facebook">
+                    <img class="w-10 h-10" src="../public/images/instagram.png" alt="Instagram">
+                    <img class="w-10 h-10" src="../public/images/twit.png" alt="Twitter">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
