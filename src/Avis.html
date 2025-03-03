@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Voyage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../public/style.css"> 
+
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-primary py-4 px-6 flex justify-between items-center">
+        <img src="../public/logo.png" alt="Logo" class="h-12">
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="text-gray-700 font-semibold">Accueil</a></li>
+                <li><a href="#" class="text-gray-700 font-semibold">Planification</a></li>
+                <li><a href="#" class="text-gray-700 font-semibold">Préférences usagers</a></li>
+            </ul>
+        </nav>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Se connecter</button>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="bg-[#C2EFF4] py-16 px-8 flex flex-col md:flex-row items-center relative">
+        
+        <!-- Left Text Section -->
+        <div class="md:w-1/2">
+            <h1 class="text-4xl font-bold text-gray-900">
+                Découvrez le monde avec votre <span class="text-black">partenaire</span>
+            </h1>
+            <p class="text-gray-700 mt-4">
+                Cochez la liste de contrôle ultime pour vos voyages internationaux avec votre partenaire de voyage ! 
+                Faites de vos vacances une expérience amusante, passionnante et inoubliable.
+            </p>
+            <div class="mt-6">
+                <button class="bg-black text-white px-4 py-2 rounded-lg mr-2">Découvrir</button>
+                <button class="border border-black text-black px-4 py-2 rounded-lg">Voir plus</button>
+            </div>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="md:w-1/2 flex justify-center relative">
+            <div class="relative w-72 h-72">
+                <img src="../public/cp.jpg" alt="Voyage" class="rounded-full shadow-lg border-4 border-[#00CBE0]">
+                <div class="absolute -top-6 -right-6">
+                    <img src="../public/plane.png" alt="Plane Icon" class="w-12 h-12">
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Discord Bot Icon 
+        <div class="absolute bottom-6 right-6">
+            <img src="discord-bot.png" alt="Discord Bot" class="w-12 h-12">
+        </div>-->
+
+    </section>
+    <!-- Section Avis -->
+    <section class="py-16 px-8 bg-white">
+        <h2 class="text-3xl font-bold text-center text-gray-900">Avis De Nos Clients</h2>
+        <div class="flex flex-col md:flex-row justify-center mt-8 space-x-6">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md w-80">
+                <p class="text-gray-700">Excellent service ! Je recommande vivement.</p>
+                <div class="flex items-center mt-4">
+                    <img src="../public/h1.jpg" class="h-12 w-12 rounded-full">
+                    <div class="ml-4">
+                        <h3 class="font-semibold">John Doe</h3>
+                        <p class="text-sm text-gray-500">Accountant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md w-80">
+                <p class="text-gray-700">Un voyage inoubliable grâce à cette agence !</p>
+                <div class="flex items-center mt-4">
+                    <img src="../public/h2.jpg" class="h-12 w-12 rounded-full">
+                    <div class="ml-4">
+                        <h3 class="font-semibold">John Smith</h3>
+                        <p class="text-sm text-gray-500">Journaliste</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8 px-6 text-center">
+        <p>&copy; 2025 Voyage. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
