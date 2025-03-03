@@ -208,7 +208,7 @@ footer .container {
     gap: 16px;
 }
 footer h3 {
-    font-size: 1.875rem; /* 30px = text-3xl */
+    font-size: 1.5rem; /* 30px = text-3xl */
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -218,7 +218,7 @@ footer ul {
     gap: 4px;
 }
 footer ul li a {
-    font-size: 1.875rem; /* 30px = text-3xl */
+    font-size: 1.2rem; /* 30px = text-3xl */
     color: white;
 }
 footer ul li a:hover {
@@ -325,7 +325,7 @@ footer .social-icons img {
         }
     footer h3,
     footer ul li a {
-        font-size: 1.5rem; /* 24px = text-2xl */
+        font-size: 0.8rem; /* 24px = text-2xl */
     }
     footer .social-icons img {
         width: 32px;
