@@ -4,128 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hébergement</title>
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap">
-  
   <link href="./dist/output.css" rel="stylesheet">
 </head>
 <body class="font-inter text-dark-gray bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300">
   <header class="bg-light-cyan py-4 px-6 flex items-center dark:bg-gray-800">
-  
     <div class="flex-1 flex justify-start">
       <img class="logo w-18 h-12" src="../public/images/logo.png" alt="Logo">
     </div>
-
     <nav class="flex space-x-14">
-      <a href="#" class="text-custom-cyan font-bold text-[24px] dark:text-cyan-300">ACCUEIL</a>
-      <a href="destination.html" class="text-dark-gray font-bold text-[24px] dark:text-gray-300">PLANIFICATION</a>
+      <a href="index.html" class="text-custom-cyan font-bold text-[24px] dark:text-cyan-300">ACCUEIL</a>
+      <a href="" class="text-dark-gray font-bold text-[24px] dark:text-gray-300">PLANIFICATION</a>
       <a href="#" class="text-dark-gray font-bold text-[24px] dark:text-gray-300">PRÉFÉRENCES USAGERS</a>
     </nav>
-   
     <div class="flex-1 flex justify-end items-center space-x-4">
       <img src="../public/images/icon2.png" alt="Icon 2" class="w-18 h-12">
       <img src="../public/images/icon1.png" alt="Icon 1" class="w-18 h-12">
     </div>
   </header>
-
   <section class="py-8 dark:bg-gray-900">
     <div class="container mx-auto">
-    
-      <div class="flex items-center mb-6 px-6">
-  
-        <div class="flex-1"></div>
-    
-        <div class="flex-1 text-center">
-          <h1 class="text-4xl font-bold text-custom-cyan dark:text-cyan-300">Hébergement</h1>
-        </div>
 
+      <div class="flex items-center mb-6 px-6">
+        <div class="flex-1"></div>
+        <div class="flex-1 text-center">
+          <h1 class="text-4xl font-bold text-custom-cyan dark:text-cyan-300">Recherche Destination</h1>
+        </div>
         <div class="flex-1 flex justify-end">
           <img id="themeToggle" src="../public/images/moon.jpg" alt="Moon" class="w-12 h-12 cursor-pointer" onclick="toggleDarkMode()">
         </div>
       </div>
-
       <div class="bg-light-cyan p-4 rounded-lg flex justify-center items-center space-x-4 mb-8 dark:bg-gray-700">
         <select class="border p-2 rounded dark:bg-gray-800 dark:text-white dark:border-gray-600">
-          <option>Ville</option>
+          <option>Destination</option>
           <option>Paris, France</option>
         </select>
         <select class="border p-2 rounded dark:bg-gray-800 dark:text-white dark:border-gray-600">
-          <option>Type Hébergement</option>
+          <option>Dates</option>
           <option>Mon, 22 Jan</option>
         </select>
         <input type="text" placeholder="$799" class="border p-2 rounded dark:bg-gray-800 dark:text-white dark:border-gray-600">
         <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Rechercher</button>
       </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
-          <img src="https://www.urlaubstracker.de/wp-content/uploads/2018/12/hotel-zimmer-aussicht.jpg" alt="Hôtels" class="w-full h-48 object-cover">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300 w-full max-w-sm">
+          <img src="https://th.bing.com/th/id/OIP.YdEbMQL33fvGatQ2OSOc-AHaE6?w=640&h=425&rs=1&pid=ImgDetMain" alt="Hôtels" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h3 class="text-lg font-bold dark:text-white">Hôtels</h3>
+            <h3 class="text-lg font-bold dark:text-white">Railay Beach, Thailand</h3>
             <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
           </div>
         </div>
-
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
-          <img src="https://th.bing.com/th/id/R.54c7111bd7ac819b5c45dea828d7f9db?rik=EGo%2bIbpzMZDbLA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-zMVQI8PLOhg%2fVWeZURRgoqI%2fAAAAAAAAH2w%2fKRHH7OL1UHw%2fs1600%2f03.jpg&ehk=8SbmFKzIvaQ6brpml9HkwSLbgiwc6SJ7jyqb4%2fPmIJg%3d&risl=&pid=ImgRaw&r=0" alt="Appartements" class="w-full h-48 object-cover">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300 w-full max-w-sm">
+          <img src="https://seventravel.co.uk/wp-content/uploads/2022/05/indonesia-west-bali-pura-ulun-danu-bratan-beratan-temple-2.jpg" alt="Appartements" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h3 class="text-lg font-bold dark:text-white">Appartements</h3>
+            <h3 class="text-lg font-bold dark:text-white">Bali, Indonesia</h3>
             <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
           </div>
         </div>
-
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
-          <img src="https://lesyeuxcarres.com/wp-content/uploads/2018/03/les-yeux-carres-infographie-3d-toulouse-dl2a-faycal-sentissi-complexe-hotelier-casablanca-atlas-hospitality-perspective-crepuscule.jpg" alt="Complexes hôteliers" class="w-full h-48 object-cover">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300 w-full max-w-sm">
+          <img src="https://www.shutterstock.com/image-photo/sunrise-pangong-lake-leh-ladakh-260nw-1739960357.jpg" alt="Complexes hôteliers" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h3 class="text-lg font-bold dark:text-white">Complexes hôteliers</h3>
+            <h3 class="text-lg font-bold dark:text-white">Lake Tekapo, New Zealand</h3>
             <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
-          <img src="https://propiedadescom.s3.amazonaws.com/files/600x400/circuito-puerta-del-sol-4-9-puerta-real-corregidora-queretaro-28465565-foto-01.jpg" alt="Villas" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-bold dark:text-white">Villas</h3>
-            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="mt-12">
 
-  <section class="py-8 dark:bg-gray-900">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-bold text-custom-cyan mb-6 dark:text-cyan-300">Activités</h1>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
-          <img src="../public/images/nautiques.png" alt="Activités nautiques" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-bold dark:text-white">Activités nautiques</h3>
-            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
-          </div>
+        <h2 class="text-3xl font-bold text-custom-cyan dark:text-cyan-300 text-center mb-6">Recherche par map</h2>
+        
+        <div class="flex justify-center mb-6">
+          <img src="https://th.bing.com/th/id/R.5fae95a94bc989f3cdc542cefb312f7c?rik=k5S3Tjfo8Dk0Mw&riu=http%3a%2f%2fwww.carte-du-monde.net%2fcartes%2fcarte-monde-satellite%2fcarte-monde-satellite-grande.jpg&ehk=dKuWlrB8X32hCvZ%2bMTuXSzDTlQbBaNJRicD%2bIxk5%2f5E%3d&risl=&pid=ImgRaw&r=0" alt="Carte du monde" class="w-full max-w-4xl h-auto rounded-lg shadow-lg">
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
-          <img src="../public/images/hiver.png" alt="Activités hiver" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-bold dark:text-white">Activités hiver</h3>
-            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl font-bold text-custom-cyan dark:text-cyan-300 mb-4">Détails du pays</h3>
+            <p class="text-medium-gray dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
           </div>
-        </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-800 transform hover:scale-105 transition duration-300">
-          <img src="../public/images/forest.png" alt="Activités forêt" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-bold dark:text-white">Activités forêt</h3>
-            <p class="text-medium-gray text-custom-18 font-rajdhani leading-custom-24 mb-4 dark:text-gray-300">Quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-            <button class="bg-black text-white px-4 py-2 rounded dark:bg-gray-600">Réserver</button>
+          <div>
+            <h3 class="text-xl font-bold text-custom-cyan dark:text-cyan-300 mb-4">Recommandations</h3>
+            <p class="text-medium-gray dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
           </div>
         </div>
       </div>
@@ -176,7 +136,6 @@
       </div>
     </div>
   </footer>
-
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const body = document.body;
@@ -199,7 +158,7 @@
       if (body.classList.contains('dark')) {
         themeToggle.src = '../public/images/sun.jpg';
         themeToggle.alt = 'Sun';
-        localStorage.setItem('theme', 'dark'); 
+        localStorage.setItem('theme', 'dark');
       } else {
         themeToggle.src = '../public/images/moon.jpg';
         themeToggle.alt = 'Moon';
